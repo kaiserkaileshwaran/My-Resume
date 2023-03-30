@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fast Food Center</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body { 
+                background-image: url('background.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center; 
+            }
+            hr{
+                width:30%; 
+                height: 3px; 
+                background-color: red;
+            }
+            .zoom {
+                width : 10%;
+                height: 35%;
+                background-color: lightblue;
+                transition: transform .2s;
+                margin: 0 auto;
+                border-radius: 45px;
+            }
+            .zoom:hover {
+                -ms-transform: scale(1.5); /* IE 9 */
+                -webkit-transform: scale(1.5); /* Safari 3-8 */
+                transform: scale(1.5); 
+            }
+            a{
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                border-radius: 25px;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: grey;
+                color:blue;
+                transition: transform .2s;
+                transform: scale(1.2); 
+            }
+            .container {
+                position: relative;
+                width: 45%;
+            }
+            img{
+                margin-left: 4%;
+                width : 45%;
+                height : 50%;
+                border-radius: 25px;
+            }
+            column{
+                width: 100%;
+                height: 100%;    
+            }
+
+            .image {
+                opacity: 1;
+                display: block;
+                width: 100%;
+                height: auto;
+                transition: .5s ease;
+                backface-visibility: hidden;
+                border-radius: 25px;
+            }
+
+            .middle {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            .container:hover .image {
+                opacity: 0.3;
+            }
+
+            .container:hover .middle {
+                opacity: 1;
+            }
+
+            .text {
+                color: white;
+                font-size: 16px;
+            }
+            fieldset{
+                border: none;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            .column {
+                float: left;
+                width: 45%;
+                height: 100%;
+                padding: 10px;
+            }
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style = "color: white;"><center><em>9 to 99 What the Food</em></center></h1>
+        <hr><br>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li style = "float:right"><a href="#contactus">Contact Us</a></li>
+ 
+        </ul>
+        <center>
+            <div class = "zoom" id = "home">
+                <h1><em><a href = "#home">Home</a></em></h1>
+            </div>
+        </center>
+        <br>
+        <img src = "shop-1.jpg">
+        <img src = "shop-2.jpg">
+        <center>
+            <div class = "zoom" id = "products">
+                <h1><em><a href = "#products">Products</em></h1>
+            </div>
+        </center>
+        <fieldset>
+            <div class="container" style = "float:left; margin-left:3%">
+                <img src="burger.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Burger = <i class="fa fa-rupee">49</i> - <i class="fa fa-rupee">99</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="container"style = "float:right ;margin-right:3%">
+                <img src="french fries.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>French Fries = <i class="fa fa-rupee">49</i> - <i class="fa fa-rupee">59</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" style = "float:left; margin-left:3%">
+                <img src="ice cream.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Ice Cream = <i class="fa fa-rupee">29</i> - <i class="fa fa-rupee">69</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="container"style = "float:right ;margin-right:3%">
+                <img src="maggie.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Maggie = <i class="fa fa-rupee">19</i> - <i class="fa fa-rupee">39</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" style = "float:left; margin-left:3%">
+                <img src="non veg starter.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Non-Veg Starter = <i class="fa fa-rupee">59</i> - <i class="fa fa-rupee">69</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="container"style = "float:right ;margin-right:3%">
+                <img src="momo.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Momo = <i class="fa fa-rupee">59</i> - <i class="fa fa-rupee">69</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" style = "float:left; margin-left:3%">
+                <img src="veg starter.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Veg-Starter = <i class="fa fa-rupee">09</i> - <i class="fa fa-rupee">59</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="container"style = "float:right ;margin-right:3%">
+                <img src="mojito.avif" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Mojito = <i class="fa fa-rupee">49</i> - <i class="fa fa-rupee">69</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" style = "float:left; margin-left:3%">
+                <img src="sandwich.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Sandwich = <i class="fa fa-rupee">69</i> - <i class="fa fa-rupee">89</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="container"style = "float:right ;margin-right:3%">
+                <img src="milkshake.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Milkshake = <i class="fa fa-rupee">79</i> - <i class="fa fa-rupee">99</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <div class="container" style = "margin-left:25%">
+                <img src="brownie.jpg" class="image">
+                <div class="middle">
+                    <div class="text">
+                        <pre><h3><em>Brownie = <i class="fa fa-rupee">79</i> - <i class="fa fa-rupee">99</i></em></h3></pre>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <br><br>
+        <center>
+            <div class = "zoom" id = "menu">
+                <h1><em><a href = "#menu">Menu</em></h1>
+            </div>
+            <img src = "menu.png" style = "width: 70%;">
+        </center>
+        <center>
+            <div class = "zoom" id = "contactus">
+                <h1><em><a href = "#contactus">Contact Us</em></h1>
+            </div>
+        </center>
+        <div class = "row">
+            <div class="column">
+                <pre>
+                    <h3 style = "color:white">
+                        Ph No: 96884 78586;
+                        <address>
+                        Address:
+                            76, Power House Rd, 
+                            Kaikolar Thottam, 
+                            Chidambaram Colony, 
+                            Erode, 
+                            Tamil Nadu 638001
+                        </address>
+                        Opening Hours:
+                            Everyday 1 PM - 10 PM ( Except Sunday )
+                    </h3>
+    
+                </pre>
+            </div>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.9671672192258!2d77.71707121490348!3d11.337108791942553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96fdc37e9cccf%3A0xe3b71f869a6a9ab1!2s9%20To%2099%20What%20The%20Food!5e0!3m2!1sen!2sin!4v1680065369008!5m2!1sen!2sin" width="600" height="450" style = "border-radius: 25px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>   
+        <br><br>
+    </body>
+</html>
